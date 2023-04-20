@@ -1,0 +1,152 @@
+/* ESTILOS GENERALES */
+@import url('https://fonts.googleapis.com/css2?family=Alkatra&family=Arsenal&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Alkatra', sans-serif;
+    color:#DDDDDD !important;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    height: 100%;
+    width: 100%;
+    background-color: #17191e;
+}
+
+footer{
+    margin-top: 1rem;
+    height: 20%;
+    bottom: 0;
+}
+
+.navbar-toggler-icon{
+    background: url('https://api.iconify.design/solar/hamburger-menu-line-duotone.svg?color=%23ddd&width=36') no-repeat center center / contain;
+}
+a img{
+    width: 75px;
+    margin: 15px;
+}
+
+ul{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+}
+
+h1, h2, h3{
+    text-align: center;
+    margin: 20px 0;
+}
+
+.btn{
+    background-color: #850000;
+    border: #DDDDDD;
+}
+
+/*INICIO*/
+#inicio .bg-home {
+    background-image: url(../assets/images/fondo.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+#inicio .titulo_home h1 {
+    display: inline;
+    font-size: 5em;
+    font-weight: bold;
+    text-decoration: line-through;
+    text-align: left;
+    position: absolute;
+    margin-left: 30px;
+    top: 500px;
+}
+
+/*JUGADORES*/
+.ficha {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.jugador {
+    width: 280px;
+    background-color: #232323;
+    padding: 30px 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.jugador h2, h3{
+    font-family: 'Arsenal', sans-serif;
+} 
+.jugador__redes{
+    border: none;
+    padding: 5px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.jugador__redes a{
+    color: #002762;
+}
+
+
+/* CONTACTO*/
+#contacto .row{
+    flex-wrap: nowrap;
+    height: 80vh;
+}
+
+#contacto .row .bg-contacto {
+    background-image: url(../assets/images/contacto2.jpg);
+    min-height: 400px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    opacity: 0.8;
+}
+
+#contacto .row form input{
+    background-color: #4a4b50;
+    border: #850000;
+}
+#contacto .row form textarea{
+    background-color: #4a4b50;
+    border: #850000;
+}
+
+/* hola como tenia que hacer para aumentar el espacio entre los botones. no me estaria saliendo :) */
+/* #contacto .row form button{
+    background-color: #850000;
+    color: #DDDDDD;
+} */
+
+
+/* PARTIDOS */
+
+.fechas .accordion .accordion-item .accordion-header .accordion-button{
+    background-color:#17191e;
+}
+
+.fechas .accordion .accordion-item .accordion-collapse .accordion-body{
+    background-color: #4a4b50;
+}
+
+/* TIENDA*/
+/* section .row div .card .card-body a.btn{
+    background-color: #850000;
+    border: #DDDDDD;
+} */
