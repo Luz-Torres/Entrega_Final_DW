@@ -19,12 +19,22 @@ body{
     background-color: #17191e;
 }
 
-footer{
-    margin-top: 1rem;
-    height: 20%;
-    bottom: 0;
+footer {
+    margin-top: 1.5rem;
+    padding: 1.5rem 0;
 }
 
+footer a{
+    color: white; 
+}
+
+footer a:hover {
+    background-color: #002762;
+}
+.navbar{
+    font-size: 2rem;
+    padding: 20px;
+}
 .navbar-toggler-icon{
     background: url('https://api.iconify.design/solar/hamburger-menu-line-duotone.svg?color=%23ddd&width=36') no-repeat center center / contain;
 }
@@ -55,7 +65,7 @@ h1, h2, h3{
 #inicio .bg-home {
     background-image: url(../assets/images/fondo.jpg);
     background-repeat: no-repeat;
-    background-size: cover;
+    min-height: 100vh;
     background-position: center;
 }
 
@@ -102,7 +112,6 @@ h1, h2, h3{
     color: #002762;
 }
 
-
 /* CONTACTO*/
 #contacto .row{
     flex-wrap: nowrap;
@@ -128,25 +137,16 @@ h1, h2, h3{
     border: #850000;
 }
 
-/* hola como tenia que hacer para aumentar el espacio entre los botones. no me estaria saliendo :) */
-/* #contacto .row form button{
-    background-color: #850000;
-    color: #DDDDDD;
-} */
-
-
 /* PARTIDOS */
-
+.fechas{
+    font-family: 'Arsenal', sans-serif;
+}
 .fechas .accordion .accordion-item .accordion-header .accordion-button{
-    background-color:#17191e;
+    background-color: #151d2d;
+    color: #4a4b50;;
 }
 
 .fechas .accordion .accordion-item .accordion-collapse .accordion-body{
     background-color: #4a4b50;
+    color: #DDDDDD;
 }
-
-/* TIENDA*/
-/* section .row div .card .card-body a.btn{
-    background-color: #850000;
-    border: #DDDDDD;
-} */
