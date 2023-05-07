@@ -1,0 +1,129 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: $fuente-principal;
+	color: $color-texto!important;
+}
+html {
+	scroll-behavior: smooth;
+}
+body {
+	height: 100%;
+	width: 100%;
+	background-color: $color-principal;
+}
+
+/*------------------------
+FOOTER
+--------------------------*/
+
+footer {
+	margin-top: 1.5rem;
+	padding: 1.5rem 0;
+	
+    a {
+		color: $color-texto;
+		
+		/* &:hover {
+			background-color: $color-terciario;
+			color: $color-secundario;
+		} */
+	}       
+}
+
+/*------------------------
+HEADER
+--------------------------*/
+
+.navbar{
+	font-size: $fuente-grande;
+	padding: $espacio-chico;
+	
+	div{
+		
+		.navbar-brand{
+			
+			img {
+				width: $icono-grande;
+				margin: $espacio-chico;
+			}
+		}
+
+		.navbar-toggler{
+
+			.navbar-toggler-icon {
+				background: url('https://api.iconify.design/solar/hamburger-menu-line-duotone.svg?color=%23ddd&width=36') no-repeat center center / contain;
+			}
+		}
+
+		.navbar-collapse{
+			
+			.navbar-nav{
+				
+				&:hover{
+					color: $color-secundario;
+				}
+			}
+		}
+	}
+
+} 
+
+/* .navbar {
+	font-size: $fuente-grande;
+	padding: $espacio-chico;
+}
+.navbar-toggler-icon {
+	background: url('https://api.iconify.design/solar/hamburger-menu-line-duotone.svg?color=%23ddd&width=36') no-repeat center center / contain;
+}
+a {
+    color: $color-texto;
+    text-decoration: none;
+
+	img {
+		width: $icono-grande;
+		margin: $espacio-chico;
+	}
+} */
+ul {
+	list-style: none;
+}
+
+/* h1 {
+	text-align: center;
+	margin: 20px, 0;
+}
+
+h2 {
+	text-align: center;
+	margin: 20px, 0;
+}
+ */
+
+
+h3 {
+	text-align: center;
+	margin: 20px 0;
+	font-family: $fuente-secudaria;
+}
+
+/*------------------------
+BOTONES
+--------------------------*/
+.btn {
+	background-color: $color-secundario;
+	color: $color-texto;
+	
+	&:hover{
+		background-color: $color-terciario;
+		color: $color-secundario;
+	}
+}
+
+@media (min-width: 992px) {
+	.fa-brands{
+		width: $icono-grande;
+	}
+
+}

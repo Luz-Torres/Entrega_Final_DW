@@ -1,152 +1,238 @@
-/* ESTILOS GENERALES */
-@import url('https://fonts.googleapis.com/css2?family=Alkatra&family=Arsenal&display=swap');
-
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Alkatra', sans-serif;
-    color:#DDDDDD !important;
+@charset "UTF-8";
+/*------------------------
+PALETA DE COLORES
+--------------------------*/
+/*------------------------
+FUENTE
+--------------------------*/
+/*------------------------
+TAMAÑOS FUENTE E ICONOS
+--------------------------*/
+/*------------------------
+SEPARACIONES padding-margin
+--------------------------*/
+/*------------------------
+RESOLUCIONES DE PANTALLA
+--------------------------*/
+/*------------------------
+MIXINS
+-------------------------*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Alkatra", sans-serif;
+  color: #dddddd !important;
 }
 
-html{
-    scroll-behavior: smooth;
+html {
+  scroll-behavior: smooth;
 }
 
-body{
-    height: 100%;
-    width: 100%;
-    background-color: #17191e;
+body {
+  height: 100%;
+  width: 100%;
+  background-color: #17191e;
 }
 
+/*------------------------
+FOOTER
+--------------------------*/
 footer {
-    margin-top: 1.5rem;
-    padding: 1.5rem 0;
+  margin-top: 1.5rem;
+  padding: 1.5rem 0;
+}
+footer a {
+  color: #dddddd;
+  /* &:hover {
+  	background-color: $color-terciario;
+  	color: $color-secundario;
+  } */
 }
 
-footer a{
-    color: white; 
+/*------------------------
+HEADER
+--------------------------*/
+/* .navbar{
+	font-size: $fuente-grande;
+	padding: $espacio-chico;
+
+	div{
+
+		.navbar-brand{
+
+			img {
+				width: $icono-grande;
+				margin: $espacio-chico;
+			}
+		}
+
+		.navbar-toggler{
+
+			.navbar-toggler-icon {
+				background: url('https://api.iconify.design/solar/hamburger-menu-line-duotone.svg?color=%23ddd&width=36') no-repeat center center / contain;
+			}
+		}
+
+		.navbar-collapse{
+
+			.navbar-nav{
+
+				.nav-link:hover{
+					color: $color-secundario;
+				}
+			}
+		}
+	}
+
+} */
+.navbar {
+  font-size: 2rem;
+  padding: 20px;
 }
 
-footer a:hover {
-    background-color: #002762;
-}
-.navbar{
-    font-size: 2rem;
-    padding: 20px;
-}
-.navbar-toggler-icon{
-    background: url('https://api.iconify.design/solar/hamburger-menu-line-duotone.svg?color=%23ddd&width=36') no-repeat center center / contain;
-}
-a img{
-    width: 75px;
-    margin: 15px;
+.navbar-toggler-icon {
+  background: url("https://api.iconify.design/solar/hamburger-menu-line-duotone.svg?color=%23ddd&width=36") no-repeat center center/contain;
 }
 
-ul{
-    list-style: none;
+a {
+  color: #dddddd;
+  text-decoration: none;
+}
+a img {
+  width: 60px;
+  margin: 20px;
 }
 
-a{
-    text-decoration: none;
+ul {
+  list-style: none;
 }
 
-h1, h2, h3{
-    text-align: center;
-    margin: 20px 0;
+/* h1 {
+	text-align: center;
+	margin: 20px, 0;
 }
 
-.btn{
-    background-color: #850000;
-    border: #DDDDDD;
+h2 {
+	text-align: center;
+	margin: 20px, 0;
+}
+ */
+h3 {
+  text-align: center;
+  margin: 20px 0;
+  font-family: "Arsenal", sans-serif;
 }
 
-/*INICIO*/
-#inicio .bg-home {
-    background-image: url(../assets/images/fondo.jpg);
-    background-repeat: no-repeat;
-    min-height: 100vh;
-    background-position: center;
+/*------------------------
+BOTONES
+--------------------------*/
+.btn {
+  background-color: #850000;
+  color: #dddddd;
+}
+.btn:hover {
+  background-color: #002762;
+  color: #850000;
 }
 
+/*------------------------
+INICIO
+--------------------------*/
+#inicio .bg-home img {
+  background-image: url(../assets/images/fondo.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  min-height: 100vh;
+  min-width: 100vh;
+  background-position: center;
+  opacity: 0.5;
+}
 #inicio .titulo_home h1 {
-    display: inline;
-    font-size: 5em;
-    font-weight: bold;
-    text-decoration: line-through;
-    text-align: left;
-    position: absolute;
-    margin-left: 30px;
-    top: 500px;
+  display: inline;
+  font-size: 5rem;
+  font-weight: bold;
+  text-decoration: line-through;
+  text-align: left;
+  position: absolute;
+  margin: 60px;
+  top: 500px;
 }
 
-/*JUGADORES*/
+/*------------------------
+JUGADORES
+--------------------------*/
 .ficha {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-    gap: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+.ficha .jugador {
+  width: 280px;
+  background-color: #232323;
+  padding: 30px 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.ficha .jugador h2, .ficha .jugador h3 {
+  font-family: "Arsenal", sans-serif;
+}
+.ficha .jugador .jugador__redes {
+  border: none;
+  padding: 5px;
+  font-weight: bold;
+  cursor: pointer;
+}
+.ficha .jugador .jugador__redes a {
+  color: #002762;
 }
 
-.jugador {
-    width: 280px;
-    background-color: #232323;
-    padding: 30px 20px;
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
+/*------------------------
+PARTIDOS
+-------------------------*/
+#partidos {
+  /* .tabla{
+
+  } */
+}
+#partidos .fechas {
+  font-family: "Arsenal", sans-serif;
+}
+#partidos .fechas .accordion .accordion-item .accordion-header button {
+  background-color: #850000;
+  color: #dddddd;
+}
+#partidos .fechas .accordion .accordion-item .accordion-body {
+  background-color: #002762;
+  color: #dddddd;
+}
+#partidos .fechas .accordion .accordion-item .accordion-body .conteiner .row .resultado {
+  font-size: 2rem;
 }
 
-.jugador h2, h3{
-    font-family: 'Arsenal', sans-serif;
-} 
-.jugador__redes{
-    border: none;
-    padding: 5px;
-    font-weight: bold;
-    cursor: pointer;
+#contacto .row {
+  flex-wrap: nowrap;
+  height: 80vh;
 }
-
-.jugador__redes a{
-    color: #002762;
-}
-
-/* CONTACTO*/
-#contacto .row{
-    flex-wrap: nowrap;
-    height: 80vh;
-}
-
 #contacto .row .bg-contacto {
-    background-image: url(../assets/images/contacto2.jpg);
-    min-height: 400px;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    position: relative;
-    opacity: 0.8;
+  background-image: url(../assets/images/contacto2.jpg);
+  min-height: 400px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  opacity: 0.8;
+}
+#contacto .row form input, #contacto .row form text area {
+  background-color: #4a4b50;
+  border: #850000;
+}
+#contacto .row form textarea {
+  background-color: #4a4b50;
+  border: #850000;
 }
 
-#contacto .row form input{
-    background-color: #4a4b50;
-    border: #850000;
-}
-#contacto .row form textarea{
-    background-color: #4a4b50;
-    border: #850000;
-}
-
-/* PARTIDOS */
-.fechas{
-    font-family: 'Arsenal', sans-serif;
-}
-.fechas .accordion .accordion-item .accordion-header .accordion-button{
-    background-color: #151d2d;
-    color: #4a4b50;;
-}
-
-.fechas .accordion .accordion-item .accordion-collapse .accordion-body{
-    background-color: #4a4b50;
-    color: #DDDDDD;
-}
+/*# sourceMappingURL=style.css.map */

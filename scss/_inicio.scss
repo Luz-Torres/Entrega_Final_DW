@@ -1,0 +1,32 @@
+/*------------------------
+INICIO
+--------------------------*/
+#inicio {
+    
+    .bg-home {
+        
+        img{
+            background-image: url(../assets/images/fondo.jpg);
+            background-size: cover;
+            background-repeat: no-repeat;
+            min-height: 100vh;
+            min-width: 100vh;
+            background-position: center;
+            opacity: 0.5;
+        }
+    }
+
+    .titulo_home{
+        
+        h1 {
+            display: inline;
+            font-size: 5rem;
+            font-weight: bold;
+            text-decoration: line-through;
+            text-align: left;
+            position: absolute;
+            margin: $espacio-grande;
+            top: 500px;
+        }
+    }
+}

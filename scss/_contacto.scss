@@ -1,0 +1,30 @@
+#contacto {
+    
+    .row{
+        flex-wrap: nowrap;
+        height: 80vh;
+
+        .bg-contacto {
+            background-image: url(../assets/images/contacto2.jpg);
+            min-height: 400px;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            position: relative;
+            opacity: 0.8;
+        }
+
+        form{
+            input, text area{
+                background-color: #4a4b50;
+                border: $color-secundario;
+            }
+
+            textarea{
+                background-color: #4a4b50;
+                border: #850000;
+            }
+        }
+    }
+
+}

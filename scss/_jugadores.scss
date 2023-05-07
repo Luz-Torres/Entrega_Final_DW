@@ -1,0 +1,36 @@
+/*------------------------
+JUGADORES
+--------------------------*/
+
+.ficha {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+
+    .jugador {
+        width: 280px;
+        background-color: #232323;
+        padding: 30px 20px;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+
+        h2, h3{
+            font-family: 'Arsenal', sans-serif;
+        }
+
+        .jugador__redes{
+            border: none;
+            padding: 5px;
+            font-weight: bold;
+            cursor: pointer;
+
+            a{
+                color: #002762;
+            }
+        }
+    }
+
+}

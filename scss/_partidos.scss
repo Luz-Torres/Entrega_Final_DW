@@ -1,0 +1,39 @@
+/*------------------------
+PARTIDOS
+-------------------------*/
+#partidos{
+    /* .tabla{
+
+    } */
+
+    .fechas{
+        font-family: 'Arsenal', sans-serif;
+
+        .accordion{
+
+            .accordion-item{
+
+                .accordion-header{
+                    
+                    button{
+                        background-color: $color-secundario;
+                        color: $color-texto;
+                    }
+                }
+
+                .accordion-body{
+                    background-color: $color-terciario;
+                    color: $color-texto;
+                    
+                    .conteiner .row {
+                        
+                        .resultado{
+                            font-size: $fuente-grande;
+                        }
+                    }
+                } 
+                
+            }
+        }
+    }
+}

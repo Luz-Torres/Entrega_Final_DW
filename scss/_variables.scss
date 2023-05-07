@@ -1,0 +1,56 @@
+/*------------------------
+PALETA DE COLORES
+--------------------------*/
+
+$color-principal:#17191e;
+$color-secundario:#850000;
+$color-terciario:#002762;
+$color-texto:#dddddd;
+
+/*------------------------
+FUENTE
+--------------------------*/
+
+$fuente-principal:'Alkatra', sans-serif;
+$fuente-secudaria:'Arsenal', sans-serif;
+
+/*------------------------
+TAMAÑOS FUENTE E ICONOS
+--------------------------*/
+
+$fuente-chica: 1rem;
+$fuente-grande: 2rem;
+$icono-chico:40px;
+$icono-grande:60px;
+
+/*------------------------
+SEPARACIONES padding-margin
+--------------------------*/
+
+$espacio-Xchico: 10px;
+$espacio-chico: 20px;
+$espacio-medio: 40px;
+$espacio-grande: 60px;
+/*------------------------
+RESOLUCIONES DE PANTALLA
+--------------------------*/
+
+$tablet:768px;
+$desktop:992px;
+$desktopXG:1200px;
+
+/*------------------------
+MIXINS
+-------------------------*/
+@mixin flex-columna {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+@mixin flex-fila-centrado {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
