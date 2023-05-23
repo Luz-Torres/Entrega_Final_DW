@@ -9,27 +9,23 @@ html {
 	scroll-behavior: smooth;
 }
 body {
-	height: 100%;
-	width: 100%;
+	width: 100vw;
 	background-color: $color-principal;
 }
 
-/*------------------------
-FOOTER
---------------------------*/
+ul {
+	list-style: none;
+}
 
-footer {
-	margin-top: 1.5rem;
-	padding: 1.5rem 0;
-	
-    a {
-		color: $color-texto;
-		
-		/* &:hover {
-			background-color: $color-terciario;
-			color: $color-secundario;
-		} */
-	}       
+h3, h5 {
+	text-align: center;
+	margin: $espacio-chico 0;
+	font-family: $fuente-secudaria;
+}
+
+a {
+    color: $color-texto;
+    text-decoration: none;
 }
 
 /*------------------------
@@ -43,10 +39,9 @@ HEADER
 	div{
 		
 		.navbar-brand{
-			
+
 			img {
 				width: $icono-grande;
-				margin: $espacio-chico;
 			}
 		}
 
@@ -70,42 +65,13 @@ HEADER
 
 } 
 
-/* .navbar {
-	font-size: $fuente-grande;
-	padding: $espacio-chico;
-}
-.navbar-toggler-icon {
-	background: url('https://api.iconify.design/solar/hamburger-menu-line-duotone.svg?color=%23ddd&width=36') no-repeat center center / contain;
-}
-a {
-    color: $color-texto;
-    text-decoration: none;
+/*------------------------
+FOOTER
+--------------------------*/
 
-	img {
-		width: $icono-grande;
-		margin: $espacio-chico;
-	}
-} */
-ul {
-	list-style: none;
-}
-
-/* h1 {
-	text-align: center;
-	margin: 20px, 0;
-}
-
-h2 {
-	text-align: center;
-	margin: 20px, 0;
-}
- */
-
-
-h3 {
-	text-align: center;
-	margin: 20px 0;
-	font-family: $fuente-secudaria;
+footer {
+	margin-top: 1.5rem;
+	padding: 1.5rem 0; 
 }
 
 /*------------------------
@@ -119,11 +85,4 @@ BOTONES
 		background-color: $color-terciario;
 		color: $color-secundario;
 	}
-}
-
-@media (min-width: 992px) {
-	.fa-brands{
-		width: $icono-grande;
-	}
-
 }

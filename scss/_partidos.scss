@@ -2,9 +2,6 @@
 PARTIDOS
 -------------------------*/
 #partidos{
-    /* .tabla{
-
-    } */
 
     .fechas{
         font-family: 'Arsenal', sans-serif;
@@ -15,17 +12,22 @@ PARTIDOS
 
                 .accordion-header{
                     
-                    button{
+                    .accordion-button{
                         background-color: $color-secundario;
                         color: $color-texto;
+                        font-size: 1.1rem;
                     }
                 }
 
                 .accordion-body{
-                    background-color: $color-terciario;
+                    background-color: $color-prin-dif/* rgb(26, 29, 59) */;
                     color: $color-texto;
                     
                     .conteiner .row {
+
+                        img{
+                            width: $icono-grande;
+                        }
                         
                         .resultado{
                             font-size: $fuente-grande;

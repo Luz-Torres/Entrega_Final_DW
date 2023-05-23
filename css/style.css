@@ -17,6 +17,7 @@ RESOLUCIONES DE PANTALLA
 /*------------------------
 MIXINS
 -------------------------*/
+/*--------------------------------*/
 * {
   margin: 0;
   padding: 0;
@@ -30,9 +31,40 @@ html {
 }
 
 body {
-  height: 100%;
-  width: 100%;
+  width: 100vw;
   background-color: #17191e;
+}
+
+ul {
+  list-style: none;
+}
+
+h3, h5 {
+  text-align: center;
+  margin: 20px 0;
+  font-family: "Arsenal", sans-serif;
+}
+
+a {
+  color: #dddddd;
+  text-decoration: none;
+}
+
+/*------------------------
+HEADER
+--------------------------*/
+.navbar {
+  font-size: 2rem;
+  padding: 20px;
+}
+.navbar div .navbar-brand img {
+  width: 60px;
+}
+.navbar div .navbar-toggler .navbar-toggler-icon {
+  background: url("https://api.iconify.design/solar/hamburger-menu-line-duotone.svg?color=%23ddd&width=36") no-repeat center center/contain;
+}
+.navbar div .navbar-collapse .navbar-nav:hover {
+  color: #850000;
 }
 
 /*------------------------
@@ -42,121 +74,118 @@ footer {
   margin-top: 1.5rem;
   padding: 1.5rem 0;
 }
-footer a {
-  color: #dddddd;
-  /* &:hover {
-  	background-color: $color-terciario;
-  	color: $color-secundario;
-  } */
-}
-
-/*------------------------
-HEADER
---------------------------*/
-/* .navbar{
-	font-size: $fuente-grande;
-	padding: $espacio-chico;
-
-	div{
-
-		.navbar-brand{
-
-			img {
-				width: $icono-grande;
-				margin: $espacio-chico;
-			}
-		}
-
-		.navbar-toggler{
-
-			.navbar-toggler-icon {
-				background: url('https://api.iconify.design/solar/hamburger-menu-line-duotone.svg?color=%23ddd&width=36') no-repeat center center / contain;
-			}
-		}
-
-		.navbar-collapse{
-
-			.navbar-nav{
-
-				.nav-link:hover{
-					color: $color-secundario;
-				}
-			}
-		}
-	}
-
-} */
-.navbar {
-  font-size: 2rem;
-  padding: 20px;
-}
-
-.navbar-toggler-icon {
-  background: url("https://api.iconify.design/solar/hamburger-menu-line-duotone.svg?color=%23ddd&width=36") no-repeat center center/contain;
-}
-
-a {
-  color: #dddddd;
-  text-decoration: none;
-}
-a img {
-  width: 60px;
-  margin: 20px;
-}
-
-ul {
-  list-style: none;
-}
-
-/* h1 {
-	text-align: center;
-	margin: 20px, 0;
-}
-
-h2 {
-	text-align: center;
-	margin: 20px, 0;
-}
- */
-h3 {
-  text-align: center;
-  margin: 20px 0;
-  font-family: "Arsenal", sans-serif;
-}
 
 /*------------------------
 BOTONES
 --------------------------*/
-.btn {
+.btn, #error .conteiner .error__titulo .boton__volver {
   background-color: #850000;
   color: #dddddd;
 }
-.btn:hover {
+.btn:hover, #error .conteiner .error__titulo .boton__volver:hover {
   background-color: #002762;
   color: #850000;
 }
 
+#inicio {
+  background-image: url("../assets/icons/stadium.png");
+  height: 90vh;
+  margin: 20px;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+#inicio h1 {
+  font-size: 6rem;
+  align-items: center;
+  letter-spacing: 6px;
+}
+@media screen and (max-width: 992px) {
+  #inicio h1 {
+    font-size: 3rem;
+    margin: 60px;
+  }
+}
+#inicio h1 span {
+  display: block;
+  font-size: 7rem;
+  font-weight: bold;
+  align-items: center;
+}
+@media screen and (max-width: 572px) {
+  #inicio h1 span {
+    margin: 60px;
+    font-size: 4rem;
+  }
+}
+@media screen and (max-width: 992px) {
+  #inicio h1 span {
+    font-size: 5rem;
+  }
+}
+#inicio button {
+  position: absolute;
+  display: flex;
+  bottom: 200px;
+}
+@media screen and (max-width: 572px) {
+  #inicio button {
+    bottom: 5px;
+  }
+}
+@media screen and (max-width: 768px) {
+  #inicio button {
+    bottom: 150px;
+  }
+}
+
+.entradas {
+  width: 18rem;
+  background-color: #232323;
+  border: 4px solid #850000;
+  border-radius: 20px;
+}
+
+.list-group-item {
+  background-color: #232323;
+}
+
 /*------------------------
-INICIO
+ERROR
 --------------------------*/
-#inicio .bg-home img {
-  background-image: url(../assets/images/fondo.jpg);
+#error .conteiner .error__bg {
+  background-image: url(../assets/images/error.jpg);
   background-size: cover;
   background-repeat: no-repeat;
-  min-height: 100vh;
-  min-width: 100vh;
-  background-position: center;
+  background-position: center center;
+  position: relative;
+  height: 95vh;
+  width: 98vw;
+  margin: 20px;
   opacity: 0.5;
 }
-#inicio .titulo_home h1 {
-  display: inline;
-  font-size: 5rem;
-  font-weight: bold;
-  text-decoration: line-through;
-  text-align: left;
+#error .conteiner .error__titulo {
   position: absolute;
-  margin: 60px;
-  top: 500px;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  right: 0;
+  bottom: 450px;
+  left: 0;
+  max-height: 100vh;
+}
+#error .conteiner .error__titulo h1 {
+  padding: 40px;
+  font-size: 3rem;
+}
+#error .conteiner .error__titulo .boton__volver {
+  position: absolute;
+  display: flex;
+  bottom: 5px;
+}
+@media screen and (max-width: 768px) {
+  #error .conteiner .error__titulo .boton__volver {
+    bottom: 0px;
+  }
 }
 
 /*------------------------
@@ -176,6 +205,8 @@ JUGADORES
   display: flex;
   flex-direction: column;
   gap: 10px;
+  border-radius: 20px;
+  border: 4px solid #850000;
 }
 .ficha .jugador h2, .ficha .jugador h3 {
   font-family: "Arsenal", sans-serif;
@@ -193,21 +224,20 @@ JUGADORES
 /*------------------------
 PARTIDOS
 -------------------------*/
-#partidos {
-  /* .tabla{
-
-  } */
-}
 #partidos .fechas {
   font-family: "Arsenal", sans-serif;
 }
-#partidos .fechas .accordion .accordion-item .accordion-header button {
+#partidos .fechas .accordion .accordion-item .accordion-header .accordion-button {
   background-color: #850000;
   color: #dddddd;
+  font-size: 1.1rem;
 }
 #partidos .fechas .accordion .accordion-item .accordion-body {
-  background-color: #002762;
+  background-color: #232323;
   color: #dddddd;
+}
+#partidos .fechas .accordion .accordion-item .accordion-body .conteiner .row img {
+  width: 60px;
 }
 #partidos .fechas .accordion .accordion-item .accordion-body .conteiner .row .resultado {
   font-size: 2rem;
@@ -226,7 +256,7 @@ PARTIDOS
   position: relative;
   opacity: 0.8;
 }
-#contacto .row form input, #contacto .row form text area {
+#contacto .row form input {
   background-color: #4a4b50;
   border: #850000;
 }

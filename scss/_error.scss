@@ -1,0 +1,49 @@
+/*------------------------
+ERROR
+--------------------------*/
+#error{
+    .conteiner{
+        
+        .error__bg{
+            background-image: url(../assets/images/error.jpg);
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center center;
+            position: relative;
+            height: 95vh;
+            width: 98vw;
+            margin: $espacio-chico;
+            opacity: .5;
+        }
+
+        .error__titulo{
+            position:absolute;
+            display: flex;
+            justify-content: center;
+
+            width: 100%;
+            right: 0;
+            bottom: 450px;
+            left: 0;
+            max-height: 100vh;
+
+            h1{
+                padding: $espacio-medio;
+                font-size: 3rem;
+            }
+            
+            .boton__volver{
+                @extend .btn;
+
+                position:absolute;
+                display: flex;
+                bottom: 5px;
+                
+                @include tablet{
+                    bottom: 0px;
+                }
+            }
+        
+        }
+    }
+}

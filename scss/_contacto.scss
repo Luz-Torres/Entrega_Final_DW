@@ -15,14 +15,14 @@
         }
 
         form{
-            input, text area{
+            input{
                 background-color: #4a4b50;
                 border: $color-secundario;
             }
 
             textarea{
                 background-color: #4a4b50;
-                border: #850000;
+                border: $color-secundario;
             }
         }
     }
